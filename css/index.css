@@ -6,7 +6,7 @@
 }
 /*Estilo del header*/
 header{
-    height: 100px;
+    height: 70px;
     background: #4357c7;
     color: #ffffff;
     padding: 0 50px;
@@ -17,6 +17,8 @@ header{
 .Titulos{
     color: #ffffff;
     font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
 }
 .menu a{
     color: #ffffff;
