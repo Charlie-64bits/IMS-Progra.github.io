@@ -26,9 +26,6 @@ header{
     padding: 0 10px;
     transition: 0.4s;
 }
-.Vinculos{
-    align-items: center;
-}
 .Mostrar-menu,.Esconder-menu{
     font-size: 30px;
     cursor: pointer;
@@ -78,13 +75,13 @@ header{
 }
 
 .Video{
-    width: 100%;
-    align-content: center;
-    margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 10px;
     align-items: center;
+    width: auto;
+    height: auto;
 }
 
 iframe{
     align-items: center;
+  
 }
