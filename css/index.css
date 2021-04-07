@@ -76,3 +76,15 @@ header{
         right: 0;
     }
 }
+
+.Video{
+    width: 100%;
+    align-content: center;
+    margin: 0 auto;
+    padding: 0 50px;
+    align-items: center;
+}
+
+iframe{
+    align-items: center;
+}
