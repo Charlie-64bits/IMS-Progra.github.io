@@ -7,7 +7,7 @@
 /*Estilo del header*/
 header{
     height: 70px;
-    background: #4357c7;
+    background: #ec2727;
     color: #ffffff;
     padding: 0 50px;
     display: flex;
@@ -25,6 +25,9 @@ header{
     text-decoration: none;
     padding: 0 10px;
     transition: 0.4s;
+}
+.Vinculos{
+    align-items: center;
 }
 .Mostrar-menu,.Esconder-menu{
     font-size: 30px;
@@ -52,7 +55,7 @@ header{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #4357c7;
+        background: #ec2727;
         right: -100%;
         top: 0;
         text-align: center;
