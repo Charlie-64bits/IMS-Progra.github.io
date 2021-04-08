@@ -61,6 +61,7 @@ header{
 }
 .in-flex:first-child{
     flex: 2;
+    display: inline;
     border-radius: 12px;
     padding: 25px;
     background-color: #ffffff;
@@ -81,6 +82,9 @@ iframe{
     align-content: center;
 }
 /*Estilo de la tarjeta*/
+.Contenido-Tarjeta{
+    display: block;
+}
 .Tarjeta{
     transition: all 0.25s;
     flex-wrap: wrap;
@@ -95,6 +99,35 @@ iframe{
     height: 135px;
     border-radius: 10px;
 }
+.Column img{
+    width: 100%;
+    margin-top: 5px;
+ }
+ .row{
+     display: flex;
+     padding: 5px;
+     flex-wrap: wrap;
+ }
+ .Column{
+     flex: 25%;
+     padding: 5px;
+ }
+@media (max-width: 600px){
+    .Column{
+        flex: 100%
+    }
+}
+@media (max-width: 800px){
+    .Column{
+        flex: 50%
+    }
+}
+@media (max-width: 600px){
+    .Column{
+        flex: 100%
+    }
+}
+
 /*Responsive*/
 @media(max-width: 768px){
     .Mostrar-menu,.Esconder-menu{
