@@ -55,6 +55,7 @@ header{
     align-content: center;
 }
 .in-flex{
+    display: block;
     flex: 1;
     min-width: 250px;
     border-radius: 12px;
@@ -81,6 +82,7 @@ iframe{
 }
 /*Estilo de la tarjeta*/
 .Column img{
+    
     border-radius: 10px;
     width: 100%;
     margin-top: 5px;
@@ -89,13 +91,8 @@ iframe{
  .Column img:hover{
     transform: translateY(-15px);
  }
- .row{
-     display: flex;
-     padding: 5px;
-     flex-wrap: wrap;
- }
  .Column{
-     flex: 25%;
+     flex: 55%;
      padding: 5px;
  }
 @media (max-width: 600px){
