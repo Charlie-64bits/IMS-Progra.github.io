@@ -25,6 +25,7 @@ header{
     font-size: 20px;
     text-decoration: none;
 }
+/*Estilo del Menu*/
 .menu a{
     color: #ffffff;
     text-decoration: none;
@@ -46,7 +47,7 @@ header{
 #check{
     display: none;
 }
-
+/*Estilo de los DIV*/
 .home{
     display: flex;
     flex-wrap: wrap;
@@ -57,6 +58,7 @@ header{
     flex: 1;
     min-width: 250px;
     border-radius: 12px;
+    display: block;
 }
 .in-flex:first-child{
     flex: 2;
@@ -71,18 +73,31 @@ header{
     border-radius: 12px;
     background-color: #ffffff;
     margin: 20px;
+    display: block;
+    
 }
 
-/*Estilo del Banner*/
+/*Estilo del Video*/
 iframe{
     width: 240px;
     height: 135px;
     border-radius: 10px;
     align-content: center;
 }
-
-
-
+/*Estilo de la tarjeta*/
+.Tarjeta{
+    transition: all 0.25s;
+    overflow: hidden;
+    display: block;
+}
+.Tarjeta:hover{
+    transform: translateY(-15px);
+}
+.Tarjeta img{
+    width: 240px;
+    height: 135px;
+    border-radius: 10px;
+}
 /*Responsive*/
 @media(max-width: 768px){
     .Mostrar-menu,.Esconder-menu{
