@@ -1,5 +1,6 @@
 /*Reset, cumple la funcion de ajustar por defecto los margenes*/
-*{
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -44,11 +45,14 @@ header{
 
 /*Estilo del Banner*/
 
-#Pantalla{
+#Banner{
     padding: 0 50px;
     background-color: black;
     height: 45vh;
     background-size: cover;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
 }
 .contenido-banner h3{
     color: #ffffff;
@@ -73,10 +77,13 @@ header{
     position: absolute;
 }
 iframe{
-    width: 560px;
-    height: 315px;
+    width: 550px;
+    height: 305px;
+    display: inline;
     align-items: center;
     align-content: center;
+    border-radius: 12px;
+    box-shadow: 0 40px 80px rgba(21,21,21,0.2);
 }
 
 
