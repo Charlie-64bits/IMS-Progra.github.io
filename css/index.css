@@ -103,9 +103,9 @@ iframe{
         flex: 100%
     }
 }
-@media (max-width: 800px){
+@media (max-width: 400px){
     .Column{
-        flex: 50%
+        flex: 60%
     }
 }
 
