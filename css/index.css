@@ -73,7 +73,7 @@ header{
         right: 0;
     }
 }
-
+@media(max-width: 768px){
 .Video{
     display: flex;
     align-items: center;
@@ -82,10 +82,11 @@ header{
     align-content: center;
     justify-content: center;
 }
-
+}
 iframe{
     width: 560px;
     height: 315px;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
