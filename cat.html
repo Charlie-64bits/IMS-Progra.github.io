@@ -28,7 +28,6 @@
     <section class="home">
         <div class="in-flex">
             <h1>Gato</h1>
-            
                 <article id="Comandos">
                     <h1>Jugador 1</h1>
                     <br>
@@ -36,22 +35,24 @@
                     <h1>Jugador 2</h1>
                     <br>
                     <input type="text" id="Jugador2"><br><br>
-                    <input type="button" id="Inicio" value="Comenzar" onclick="comenzar()">
+                    <input type="button" id="Inicio" value="Comenzar" onclick="Comenzar()">
+                    <br><br>
                     <label id="Turno"></label>
                 </article>
                 <br>
                 <article id="Tablero">
-                    <input type="button" id="B1">
-                    <input type="button" id="B2">
-                    <input type="button" id="B3">
-                    <input type="button" id="B4">
-                    <input type="button" id="B5">
-                    <input type="button" id="B6">
-                    <input type="button" id="B7">
-                    <input type="button" id="B8">
-                    <input type="button" id="B9">
+                    <input type="button" id="B1" onclick="Colocar(this)">
+                    <input type="button" id="B2" onclick="Colocar(this)">
+                    <input type="button" id="B3" onclick="Colocar(this)">
+                    <br>
+                    <input type="button" id="B4" onclick="Colocar(this)">
+                    <input type="button" id="B5" onclick="Colocar(this)">
+                    <input type="button" id="B6" onclick="Colocar(this)">
+                    <br>
+                    <input type="button" id="B7" onclick="Colocar(this)">
+                    <input type="button" id="B8" onclick="Colocar(this)">
+                    <input type="button" id="B9" onclick="Colocar(this)">
                 </article>
-            
         </div>
     </section>
 </body>

@@ -73,11 +73,6 @@ header{
     background-color: #ffffff;
     margin: 20px;
 }
-section#Principal{
-    margin: 0 auto;
-    text-align: center;
-    width: 100%;
-}
 article#Comandos{
     display: inline-block;
     min-height: 300px;
@@ -89,16 +84,15 @@ article#Tablero{
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-
+    
 }
 article#Tablero input{
-    border: none;
-    overflow: hidden;
     border-radius: 10px;
     font-size: 3em;
     margin: 10px;
     height: 80px;
     width: 80px;
+    border: 1px solid #000000;
 }
 input[type="Button"]#Inicio{
     background-color: #ffffff;
@@ -117,7 +111,6 @@ input[type="Text"]{
 .botonInicio{
     color: #77d;
     background-color: #77d;
-    background: #77d;
 }
 .botonJugador1{
     color:black;
