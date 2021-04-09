@@ -84,7 +84,7 @@ article#Tablero{
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    
+    width: 50%;
 }
 article#Tablero input{
     border-radius: 10px;
@@ -95,6 +95,7 @@ article#Tablero input{
     border: 1px solid #000000;
 }
 input[type="Button"]#Inicio{
+    text-align: center;
     background-color: #ffffff;
     padding: 10px;
     width: 100%;
@@ -107,18 +108,17 @@ input[type="Text"]{
     width: 100%;
     border-radius: 15px;
 }
-
 .botonInicio{
-    color: #77d;
-    background-color: #77d;
+    color: rgb(92, 92, 92);
+    background: rgb(92, 92, 92);
 }
 .botonJugador1{
     color:black;
-    background-color: #ec2727;
+    background: #ec2727;
 }
 .botonJugador2{
     color:#ffffff;
-    background-color: black;
+    background: black;
 }
 
 /*Responsive*/

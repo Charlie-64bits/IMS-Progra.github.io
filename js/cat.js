@@ -2,6 +2,11 @@ var bandera = false;//Inicia si el juego ha iniciado
 var turno = 0;//Indica el turno de cada jugador
 var tablero = new Array();//Arreglo de botones
 
+window.onload = function(){
+    var iniciar = document.getElementById("Inicio");
+    iniciar.addEventListener("click",Comenzar);
+}
+
 function Comenzar(){
     bandera = true;
     var jugador1 = document.getElementById("Jugador1");
@@ -28,20 +33,21 @@ function Comenzar(){
             tablero[i].value="I";
         }
         turno = 1;
-        document.getElementById("Turno").innerHTML = "Turno del jugador: " + jugador1.value;
+        document.getElementById("Turno").innerHTML = "Turno del jugador: " + Jugador1.value;
     }
-}}
+}
+}
 function Colocar(boton){
     if (bandera==true){
         if (turno==1 && boton.value=="I"){
             turno = 2;
-            document.getElementById("Turno").innerHTML = "Turno del jugador: " + jugador2.value;
+            document.getElementById("Turno").innerHTML = "Turno del jugador: " + Jugador2.value;
             boton.value = "X";
             boton.className = "botonJugador1";
         }else{
             if (turno==2 && boton.value=="I"){
                 turno = 1;
-                document.getElementById("Turno").innerHTML = "Turno del jugador: " + jugador1.value;
+                document.getElementById("Turno").innerHTML = "Turno del jugador: " + Jugador1.value;
                 boton.value = "O";
                 boton.className = "botonJugador2";   
             }
@@ -59,7 +65,7 @@ function revisar(){
     || (tablero[0].value=="X" && tablero[4].value=="X" && tablero[8].value=="X")
     || (tablero[2].value=="X" && tablero[4].value=="X" && tablero[6].value=="X")
     ){
-        alert("Felicidades ganaste Jugador: " + jugador1.value);
+        alert("Felicidades ganaste Jugador: " + Jugador1.value);
         bandera= false;
     }
     if((tablero[0].value=="O" && tablero[1].value=="O" && tablero[2].value=="O")
@@ -71,7 +77,7 @@ function revisar(){
     || (tablero[0].value=="O" && tablero[4].value=="O" && tablero[8].value=="O")
     || (tablero[2].value=="O" && tablero[4].value=="O" && tablero[6].value=="O")
     ){
-        alert("Felicidades ganaste Jugador: " + jugador2.value);
+        alert("Felicidades ganaste Jugador: " + Jugador2.value);
         bandera= false;
     }   
 }
