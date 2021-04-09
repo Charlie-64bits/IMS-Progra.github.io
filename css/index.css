@@ -53,12 +53,14 @@ header{
     flex-wrap: wrap;
     text-align: center;
     align-content: center;
+    
 }
 .in-flex{
-    display: block;
     flex: 1;
+    display: inline;
     min-width: 250px;
     border-radius: 12px;
+    
 }
 .in-flex:first-child{
     flex: 2;
@@ -75,6 +77,7 @@ header{
 }
 /*Estilo del Video*/
 iframe{
+    margin: 10px;
     width: 240px;
     height: 135px;
     border-radius: 10px;
@@ -82,17 +85,22 @@ iframe{
 }
 /*Estilo de la tarjeta*/
 .Column img{
-    
     border-radius: 10px;
     width: 100%;
     margin-top: 5px;
     transition: all 0.25s;
+    
  }
  .Column img:hover{
     transform: translateY(-15px);
  }
+ .row{
+    display: inline-block;
+    margin: 20px;
+    flex-wrap: wrap;
+ }
  .Column{
-     flex: 55%;
+     flex: 25%;
      padding: 5px;
  }
 @media (max-width: 600px){
