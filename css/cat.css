@@ -73,14 +73,54 @@ header{
     background-color: #ffffff;
     margin: 20px;
 }
-/*Estilo del Video*/
-iframe{
-    margin: 10px;
-    width: 240px;
-    height: 135px;
-    border-radius: 10px;
-    align-content: center;
+
+article#Comandos{
+    display: inline-block;
+    min-height: 300px;
+    vertical-align: top;
+    width: 25%;
 }
+article#Tablero{
+    min-height: 300px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+article#Tablero input{
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 3em;
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+}
+input[type="Button"]#Inicio{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+}
+input[type="Text"]{
+    text-align: center;
+    padding: 10px;
+    margin: 0.2em;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.botonInicio{
+    color: #77d;
+    background-color: #77d;
+}
+.botonJugador1{
+    color:black;
+    background-color: #ec2727;
+}
+.botonJugador2{
+    color:#ffffff;
+    background-color: black;
+}
+
 /*Responsive*/
 @media(max-width: 768px){
     .Mostrar-menu,.Esconder-menu{
