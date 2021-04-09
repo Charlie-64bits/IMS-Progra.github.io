@@ -1,15 +1,19 @@
 /*Reset, cumple la funcion de ajustar por defecto los margenes*/
-*{
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #ededed;
 }
 /*Estilo del header*/
 header{
     height: 70px;
     background: #ec2727;
-    color: #ffffff;
     padding: 0 50px;
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,13 +24,13 @@ header{
     font-size: 20px;
     text-decoration: none;
 }
+/*Estilo del Menu*/
 .menu a{
     color: #ffffff;
     text-decoration: none;
     padding: 0 10px;
     transition: 0.4s;
 }
-
 .Mostrar-menu,.Esconder-menu{
     font-size: 30px;
     cursor: pointer;
@@ -42,7 +46,41 @@ header{
 #check{
     display: none;
 }
-
+/*Estilo de los DIV*/
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+    
+}
+.in-flex{
+    flex: 1;
+    display: inline;
+    min-width: 250px;
+    border-radius: 12px;
+}
+.in-flex:first-child{
+    flex: 2;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 20px;
+}
+.in-flex div{
+    padding: 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    margin: 20px;
+}
+/*Estilo del Video*/
+iframe{
+    margin: 10px;
+    width: 240px;
+    height: 135px;
+    border-radius: 10px;
+    align-content: center;
+}
 /*Responsive*/
 @media(max-width: 768px){
     .Mostrar-menu,.Esconder-menu{
