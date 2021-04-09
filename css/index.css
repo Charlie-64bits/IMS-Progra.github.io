@@ -60,7 +60,6 @@ header{
     display: inline;
     min-width: 250px;
     border-radius: 12px;
-    
 }
 .in-flex:first-child{
     flex: 2;
@@ -88,15 +87,14 @@ iframe{
     border-radius: 10px;
     width: 100%;
     margin-top: 5px;
-    transition: all 0.25s;
-    
+    transition: all 0.25s; 
  }
  .Column img:hover{
     transform: translateY(-15px);
  }
  .row{
-    display: inline-block;
-    margin: 20px;
+    margin: 15px;
+    display: flex;
     flex-wrap: wrap;
  }
  .Column{
