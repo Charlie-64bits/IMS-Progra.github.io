@@ -2,11 +2,6 @@ var bandera = false;//Inicia si el juego ha iniciado
 var turno = 0;//Indica el turno de cada jugador
 var tablero = new Array();//Arreglo de botones
 
-window.onload = function(){
-    var iniciar = document.getElementById("inicio")
-    iniciar.addEventListener("click",comenzar)
-}
-
 function comenzar(){
     bandera = true;
     var jugador1 = document.getElementById("Jugador1");
@@ -29,10 +24,10 @@ function comenzar(){
         tablero[7] = document.getElementById("B8");
         tablero[8] = document.getElementById("B9");
         for(var i=0;i<9;i++){
-            tablero[i].className="BotonInicio";
-            tablero[i].value="I";
+            tablero[i].className="botonInicio";
+            tablero[i].value="1";
         }
         turno = 1;
         document.getElementById("Turno").innerHTML = "Adelantejugador: " + jugador1.value;
     }
-}
+}}
