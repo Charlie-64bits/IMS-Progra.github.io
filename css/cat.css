@@ -95,6 +95,7 @@ article#Tablero input{
     margin: 10px;
     height: 70px;
     width: 70px;
+    font-weight: 700;
     border: 1px solid #000000;
 }
 input[type="Button"]#Inicio{
