@@ -74,7 +74,6 @@ header{
     margin: 20px;
 }
 section#Principal{
-    display: inline-block;
     margin: 0 auto;
     text-align: center;
     width: 100%;
@@ -90,9 +89,11 @@ article#Tablero{
     display: inline-block;
     margin: 0 auto;
     text-align: center;
-    width: 50%;
+
 }
 article#Tablero input{
+    border: none;
+    overflow: hidden;
     border-radius: 10px;
     font-size: 3em;
     margin: 10px;
